@@ -88,7 +88,7 @@ Collections are also really useful because they have built-in functions like \ve
 We typically write, \verb!ArrayList<Integer> = new ArrayList<Integer>()!, when we're instantiating an ArrayList of integers. Likewise, we could write, \verb!ArrayList<Bananas> = new ArrayList<Bananas>()! if we had created a class called \verb!Bananas!, or \verb!ArrayList<String> = new ArrayList<String>()! if we wanted an ArrayList of strings. This is example of \vocab{generics}: we are allowed to pass in whatever type we want our ArrayList to store. 
 
 
-Why are generics useful? Firstly, generics help us reduce the amount of code we need to write. Instead of writing lots of code that gets executed depending on whether the user is using an integer or a string, we can use generics in order to reduce the amount of code needed. The \verb!.add()!, \verb!.remove()! and other methods used by ArrayList are valid no matter what type we are storing in our ArrayList. If we didn't have generics, we'd need to have.
+Why are generics useful? Firstly, generics help us reduce the amount of code we need to write. Instead of writing lots of code that gets executed depending on whether the user is using an integer or a string, we can use generics in order to reduce the amount of code needed. The \verb!.add()!, \verb!.remove()! and other methods used by ArrayList are valid no matter what type we are storing in our ArrayList. If we didn't have generics, we'd need to have separate implementations such as \verb!.addInteger()!, \verb!.addString()!, \verb!.addBoolean()!, etc. in order to perform the same operation on different datatypes.
 
 Secondly, generics help us move some casting errors from runtime to compile time. Consider the following code segment:
 
